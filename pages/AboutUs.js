@@ -112,7 +112,7 @@ export default function AboutUs (){
                                         </p>
                                     <ul className={styles.infoDiv_bottom_list}>
                                         {
-                                            websiteData.values.map((item)=>{
+                                           websiteData.values &&  websiteData.values.map((item)=>{
                                                 return(
                                                     <li >{item}</li>
                                       
