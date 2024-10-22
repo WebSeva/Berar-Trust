@@ -5,6 +5,20 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 export default function Navbar (){
     const router = useRouter();
+    const [websiteData,setWebsiteData] = useState({title:""});
+    useEffect(()=>{
+        const readData = async ()=>{
+            const response = await fetch(`/api/getdata`);
+            if(response.ok){
+                  console.log('trying to fetch the data');
+                  const data = await response.json();
+                  console.log(data.message);
+                  setWebsiteData(data.message);
+
+            }
+      }
+      readData();
+    },[])
     const [windowSize,setWindowSize] = useState({
         width:0,
         height:0
@@ -36,7 +50,7 @@ export default function Navbar (){
                         <Link href={'/'}>
                             <div className={styles.logoContainer}>
                             
-                                <p className={styles.logoname}>Abhilasha Samiti</p>
+                                <p className={styles.logoname}>{websiteData.name}</p>
                             </div>
                         </Link>
 
@@ -49,9 +63,9 @@ export default function Navbar (){
                                     <p className={styles.signuptext}>Projects</p>
                                 
                                 </Link>
-                                <Link href="/GetInvolved"className={router.pathname === '/GetInvolved' ? styles.signupdiv_active : styles.signupdiv}>
+                                {/* <Link href="/GetInvolved"className={router.pathname === '/GetInvolved' ? styles.signupdiv_active : styles.signupdiv}>
                                     <p className={styles.signuptext}>Get Involved</p>
-                                </Link>
+                                </Link> */}
                             
                                 <Link href="/ContactUs" className={router.pathname === '/ContactUs' ? styles.signupdiv_active : styles.signupdiv} >
                                     <p className={styles.signuptext}>Contact Us</p>
@@ -83,9 +97,9 @@ export default function Navbar (){
                                     <p className={styles.signuptext}>Projects</p>
                                 
                                 </Link>
-                                <Link href="/GetInvolved" className={styles.page_link}>
+                                {/* <Link href="/GetInvolved" className={styles.page_link}>
                                     <p className={styles.signuptext}>Get Involved</p>
-                                </Link>
+                                </Link> */}
                             
                                 <Link href="/ContactUs" className={styles.page_link}>
                                     <p className={styles.signuptext}>Contact Us</p>

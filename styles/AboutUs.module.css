@@ -290,8 +290,9 @@
     font-weight: 250;
   
     
-    list-style-type: none;
+    list-style-type: disc;
   }
+
   .galleryHolder{
     height: 50vh;
     width: 100%;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar"
 import styles from '@/styles/ContactUs.module.css';
@@ -24,6 +24,21 @@ export default function ContactUs (){
     const onBodyChange = ()=>{
         setBody(event.target.value);
     }
+
+    const [websiteData,setWebsiteData] = useState({title:"",description:""});
+    useEffect(()=>{
+        const readData = async ()=>{
+            const response = await fetch(`/api/getdata`);
+            if(response.ok){
+                  console.log('trying to fetch the data');
+                  const data = await response.json();
+                  console.log(data.message);
+                  setWebsiteData(data.message);
+
+            }
+      }
+      readData();
+    },[])
     return(
         <>
             <Head>
@@ -45,12 +60,12 @@ export default function ContactUs (){
                         <div className={styles.newsDiv_top}>
 
                                     <h2 className={styles.newsDiv_top_header}>Come Visit Us</h2>
-                                    <p className={styles.newsDiv_top_paragraph}>Visit the Abhilasha Samiti head office on G.I.C Road, Didhat, Pithoragarh <br/> We&apos;d love to chat with you over a cup of ☕ chai!</p>
+                                    <p className={styles.newsDiv_top_paragraph}>Visit the  {websiteData.name} head office <br/> We&apos;d love to chat with you over a cup of ☕ chai!</p>
                         </div>
 
                         <div className={styles.newsDiv_photoFrame}>
                                 <img src="/office.jpeg" className={styles.newsDiv_photoFrame_photo} width={100} height={100}/>
-                                <p className={styles.newsDiv_photoFrame_paragraph}>Our office at Didihat, Pithoragarh</p>
+                                {/* <p className={styles.newsDiv_photoFrame_paragraph}>Our office at Didihat, Pithoragarh</p> */}
                         </div>
 
 

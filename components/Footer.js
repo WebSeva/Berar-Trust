@@ -1,12 +1,27 @@
+ import { useState,useEffect } from 'react';
  import styles from '@/styles/Footer.module.css';
 import Link from 'next/link';
 export default function Footer (){
+    const [websiteData,setWebsiteData] = useState({title:"",description:""});
+    useEffect(()=>{
+        const readData = async ()=>{
+            const response = await fetch(`/api/getdata`);
+            if(response.ok){
+                  console.log('trying to fetch the data');
+                  const data = await response.json();
+                  console.log(data.message);
+                  setWebsiteData(data.message);
+
+            }
+      }
+      readData();
+    },[])
     return(
         <div className={styles.footerDiv}>
              <div className={styles.footerDiv_body}> 
                 <div className={styles.footerDiv_top_left}>
                         <div className={styles.left_body}>
-                                <h2 className={styles.left_header}>Abhilasha <br/> Samiti</h2>
+                                <h2 className={styles.left_header}>{websiteData.name}</h2>
                                 <div className={styles.left_bottom}>
                                     <img src='/mail.png' width={30} height={30}/>
                                     <p className={styles.left_paragraph}>abhilasha.samiti@gmail.com</p>
@@ -48,7 +63,7 @@ export default function Footer (){
                                 <img src='/copyright.png' width={25} height={25}/>
                             
                             </div>
-                            <p className={styles.footerDiv_bottom_left_header}>Abhilasha Samiti</p>
+                            <p className={styles.footerDiv_bottom_left_header}>{websiteData.name}</p>
                     </div>
                     <div className={styles.footerDiv_bottom_right}>
                         

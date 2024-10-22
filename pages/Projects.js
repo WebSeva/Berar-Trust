@@ -3,7 +3,22 @@ import Navbar from "@/components/navbar";
 import styles from '@/styles/Projects.module.css';
 import Footer from "@/components/Footer";
 import Assistant from "@/components/Assistant";
+import { useState,useEffect } from "react";
 export default function Projects (){
+        const [websiteData,setWebsiteData] = useState({title:"",description:""});
+        useEffect(()=>{
+            const readData = async ()=>{
+                const response = await fetch(`/api/getdata`);
+                if(response.ok){
+                      console.log('trying to fetch the data');
+                      const data = await response.json();
+                      console.log(data.message);
+                      setWebsiteData(data.message);
+    
+                }
+          }
+          readData();
+        },[])
     return(
         <>  
             <Head>
@@ -22,7 +37,7 @@ export default function Projects (){
                     <div className={styles.newsDiv}>
                             <div className={styles.newsDiv_top}>
 
-                                        <h2 className={styles.newsDiv_top_header}>Projects by Abhilasha</h2>
+                                        <h2 className={styles.newsDiv_top_header}>Projects by {websiteData.name}</h2>
 
                             </div>
                             <div className={styles.newsDiv_bottom}>
@@ -36,12 +51,12 @@ export default function Projects (){
 
                                                 <div className={styles.newsDiv_block_second_right}>
                                                         <div className={styles.newsDiv_block_second_right_top}>
-                                                            <h2 className={styles.newsDiv_block_header}>Securer Himalaya</h2>
+                                                            <h2 className={styles.newsDiv_block_header}>{websiteData.project_one_title}</h2>
                                                             <div className={styles.newsDiv_block_spacer}></div>
                                                         </div>
 
                                                         <div className={styles.newsDiv_block_second_right_bottom}>
-                                                            <p>Secure Himalaya Project in Dharchula promoted snow leopard conservation and explored local job opportunities in eco-tourism, herb and wool production.</p>
+                                                            <p>{websiteData.project_one_description}</p>
                                                         </div>
                                                 </div>
                                                 
@@ -50,12 +65,12 @@ export default function Projects (){
                                     <div className={styles.newsDiv_block}>
                                             <div className={styles.newsDiv_block_left}>
                                                     <div className={styles.newsDiv_block_left_top}>
-                                                        <h2 className={styles.newsDiv_block_header}>Spring Shed Management Training</h2>
+                                                        <h2 className={styles.newsDiv_block_header}>{websiteData.project_two_title}</h2>
                                                         <div className={styles.newsDiv_block_spacer}></div>
                                                     </div>
 
                                                     <div className={styles.newsDiv_block_left_bottom}>
-                                                        <p>A Strong Seed Management Training Program under PMKSY 2.0 was held in Gangolihat, including visits to rural and water sources.</p>
+                                                        <p>{websiteData.project_two_description}</p>
                                                     </div>
                                             </div>
                                             <div className={styles.newsDiv_block_right}>
@@ -73,12 +88,12 @@ export default function Projects (){
 
                                                 <div className={styles.newsDiv_block_second_right}>
                                                         <div className={styles.newsDiv_block_second_right_top}>
-                                                            <h2 className={styles.newsDiv_block_header}>Accounting Training</h2>
+                                                            <h2 className={styles.newsDiv_block_header}>{websiteData.project_three_title}</h2>
                                                             <div className={styles.newsDiv_block_spacer}></div>
                                                         </div>
 
                                                         <div className={styles.newsDiv_block_second_right_bottom}>
-                                                            <p>An accounting training workshop under PMKSY 2.0 was held in Dasaithal, Gangolihat, for Gram Panchayat staff and implementation committee members, with 30 participants.</p>
+                                                            <p>{websiteData.project_three_description}</p>
                                                         </div>
                                                 </div>
                                                 
@@ -87,12 +102,12 @@ export default function Projects (){
                                     <div className={styles.newsDiv_block}>
                                             <div className={styles.newsDiv_block_left}>
                                                     <div className={styles.newsDiv_block_left_top}>
-                                                        <h2 className={styles.newsDiv_block_header}>Nursery Development</h2>
+                                                        <h2 className={styles.newsDiv_block_header}>{websiteData.project_four_title}</h2>
                                                         <div className={styles.newsDiv_block_spacer}></div>
                                                     </div>
 
                                                     <div className={styles.newsDiv_block_left_bottom}>
-                                                        <p>A workshop in Berinag trained 25 women from the Shiv Shakti Self Help Group in nursery development under the Women Component Project.</p>
+                                                        <p>{websiteData.project_four_description}</p>
                                                     </div>
                                             </div>
                                             <div className={styles.newsDiv_block_right}>
@@ -110,12 +125,12 @@ export default function Projects (){
 
                                                 <div className={styles.newsDiv_block_second_right}>
                                                         <div className={styles.newsDiv_block_second_right_top}>
-                                                            <h2 className={styles.newsDiv_block_header}>Van Panchayat Workshop</h2>
+                                                            <h2 className={styles.newsDiv_block_header}>{websiteData.project_five_title}</h2>
                                                             <div className={styles.newsDiv_block_spacer}></div>
                                                         </div>
 
                                                         <div className={styles.newsDiv_block_second_right_bottom}>
-                                                            <p>Our mission is to improve the lives of people in remote Pithoragarh, Uttarakhand.</p>
+                                                            <p>{websiteData.project_five_description}</p>
                                                         </div>
                                                 </div>
                                                 
@@ -124,12 +139,12 @@ export default function Projects (){
                                     <div className={styles.newsDiv_block}>
                                             <div className={styles.newsDiv_block_left}>
                                                     <div className={styles.newsDiv_block_left_top}>
-                                                        <h2 className={styles.newsDiv_block_header}>Capacity Buildup Program</h2>
+                                                        <h2 className={styles.newsDiv_block_header}>{websiteData.project_six_title}</h2>
                                                         <div className={styles.newsDiv_block_spacer}></div>
                                                     </div>
 
                                                     <div className={styles.newsDiv_block_left_bottom}>
-                                                        <p>We recently had our big meet-up at Kashipur with over 120 + schools joining on shared vision of making education more accessible</p>
+                                                        <p>{websiteData.project_six_description}</p>
                                                     </div>
                                             </div>
                                             <div className={styles.newsDiv_block_right}>
