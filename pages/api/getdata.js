@@ -19,6 +19,8 @@ export default function handler(req, res) {
                             vision:jsonObject['vision'],
                             mission:jsonObject['mission'],
                             values:jsonObject['values'],
+                            contact:jsonObject['contact'],
+                            ngo_experience:jsonObject['ngo_experience'],
                             project_one_title:jsonObject['project_one_title'],
                             project_one_description:jsonObject['project_one_description'],
                             project_two_title:jsonObject['project_two_title'],

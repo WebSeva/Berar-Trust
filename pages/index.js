@@ -16,7 +16,7 @@ export default function Home() {
   const [currentPhoto,setcurrentPhoto] = useState(0);
   const [currentTheme,setcurrentTheme] = useState(0);
   const [websiteData,setwebsiteData] = useState({title:"",description:""});
-  let photos = ['/real.JPG','/kids.JPG','/water.jpg','/school.JPG','training.JPG'];
+  let photos = ['/photo1.jpeg','/photo2.jpeg','/photo3.jpeg','/photo4.jpeg','photo5.jpeg'];
   let themes = ['linear-gradient(180deg, #FFF 0%, #419C70 100%)','linear-gradient(180deg, #FFF 0%, #1662D5 62.5%, #2B80BD 83.5%)','linear-gradient(180deg, #FFF 0%, #61A2C6 62.5%, #3A5783 83.5%)','linear-gradient(180deg, #FFF 0%, #ABABAB 62.5%, #BC884C 83.5%)','linear-gradient(180deg, #FFF 0%, #E9AAFF 62.5%, #7F50BC 83.5%)']
   useEffect(()=>{
       const readData = async ()=>{
@@ -97,7 +97,7 @@ export default function Home() {
                 </div>
                 <div className={styles.infoDiv_founderDiv}>
                         <div className={styles.infoDiv_founderDiv_left}>
-                              <img src="/founder.jpeg" className={styles.founderDiv_image} width={400} height={250}/>
+                              <img src="/founder_image.jpeg" className={styles.founderDiv_image} width={400} height={250}/>
                         </div>
                         <div className={styles.infoDiv_founderDiv_right}>
                                     <h2 className={styles.founderDiv_header}>{websiteData.founder}</h2>
@@ -107,7 +107,7 @@ export default function Home() {
                 </div>
             </div>
             
-            <div className={styles.milestoneDiv}>
+            {/* <div className={styles.milestoneDiv}>
                 <div className={styles.milestoneDiv_body}>
                       <div className={styles.milestoneDiv_left}>
                               <h2 className={styles.milestoneDiv_left_header}>Our Milestones</h2>
@@ -163,10 +163,11 @@ export default function Home() {
 
                 </div>
 
-            </div>
+            </div> */}
 
             
             <div className={styles.newsDiv}>
+                   <div className={styles.volunteerDiv_spacer}></div>
                   <div className={styles.newsDiv_top}>
 
                         <h2 className={styles.newsDiv_top_header}>What&apos;s new in {websiteData.name}?</h2>
@@ -187,7 +188,7 @@ export default function Home() {
                                           </div>
                                           <div className={styles.newsDiv_block_right}>
                                                       <div className={styles.newsDiv_block_right_photo}>
-                                                            <img src="/meeting.jpg" className={styles.newsDiv_block_right_photo_image} width={150} height={150}/>
+                                                            <img src="/upliftment.jpeg" className={styles.newsDiv_block_right_photo_image} width={150} height={150}/>
                                                       </div>
                                           </div>
                               </div>

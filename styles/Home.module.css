@@ -274,6 +274,7 @@
   
     
     border-radius: 10px;
+    object-fit: cover;
   }
 
   .founderDiv_header{
@@ -399,6 +400,9 @@
     margin-top: 2.5rem;
     font-size: 2rem;
   }
+  .newsDiv_top_header{
+    font-weight: 500;
+  }
   .newsDiv_bottom{
     margin-top: 4rem;
     width: 70%;
@@ -453,7 +457,7 @@
   
   .newsDiv_block_spacer{
     margin-top: 0.6rem;
-    width: 40%;
+    width: 20%;
     height: 0.2rem;
     background-color: #419C70;
   }
@@ -464,7 +468,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2.4rem;
     font-weight: 250;
   }
@@ -474,41 +478,48 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
   .newsDiv_block_right_photo{
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+  
    
     
   }
   .newsDiv_block_right_photo_image{
-   width: 100%;
-   height: 100%;
+   width: 95%;
+   height: 95%;
    border-top-right-radius: 40px;
    border-bottom-left-radius: 40px;
+  
+   object-fit: cover;
   }
   .newsDiv_block_second_left{
     margin-right: 2rem;
     width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
   }
   .newsDiv_block_second_left_photo{
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .newsDiv_block_second_left_photo_image{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    object-fit: cover;
   }
   .newsDiv_block_second_right{
     width: 50%;
@@ -531,7 +542,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2.4rem;
     font-weight: 250;
   }
@@ -544,6 +555,9 @@
     flex-direction: column;
     align-items: center;
     color: black;
+  }
+  .volunteerDiv_top_header{
+    font-weight: 500;
   }
   .volunteerDiv_spacer{
     margin-top: 2.5rem;
