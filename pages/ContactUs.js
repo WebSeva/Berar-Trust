@@ -59,14 +59,14 @@ export default function ContactUs (){
 
                         <div className={styles.newsDiv_top}>
 
-                                    <h2 className={styles.newsDiv_top_header}>Come Visit Us</h2>
-                                    <p className={styles.newsDiv_top_paragraph}>Visit the  {websiteData.name} head office <br/> We&apos;d love to chat with you over a cup of ☕ chai!</p>
+                                    <h2 className={styles.newsDiv_top_header}>Contact Us</h2>
+                                    {/* <p className={styles.newsDiv_top_paragraph}>Visit the  {websiteData.name} head office <br/> We&apos;d love to chat with you over a cup of ☕ chai!</p> */}
                         </div>
 
-                        <div className={styles.newsDiv_photoFrame}>
+                        {/* <div className={styles.newsDiv_photoFrame}>
                                 <img src="/office.jpeg" className={styles.newsDiv_photoFrame_photo} width={100} height={100}/>
-                                {/* <p className={styles.newsDiv_photoFrame_paragraph}>Our office at Didihat, Pithoragarh</p> */}
-                        </div>
+                                <p className={styles.newsDiv_photoFrame_paragraph}>Our office at Didihat, Pithoragarh</p>
+                        </div> */}
 
 
                         <div className={styles.newsDiv_formFrame}>

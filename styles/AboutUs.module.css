@@ -105,13 +105,15 @@
   }
   
   .newsDiv_block{
-    margin-top: 4rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
    
     height: 40vh;
+   
+   
    
    
  
@@ -170,18 +172,20 @@
     font-weight: 250;
   }
   .newsDiv_block_paragraph{
-    font-weight: 250;
+    font-weight: 250
   }
   .newsDiv_block_right{
+    height: 100%;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    
+   
   }
   .newsDiv_block_right_photo{
-    width: 95%;
-    height: 95%;
+    width: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
