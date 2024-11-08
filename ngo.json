@@ -1,0 +1,38 @@
+{
+  "name": "Barar Trust",
+  "description": "BARAR TRUST is a public charitable trust established to provide sound education, computer education, vocational training, and social justice programs for marginalized communities, especially SC, ST, BC, OBC, minorities, children, women, the elderly, and people with disabilities. It aims to establish technical schools, hospitals, and media outlets for the benefit of students and the general public.",
+  "mission": "To empower and uplift marginalized communities through education, skill development, and social justice initiatives.",
+  "vision":"To change the lives of under privilege communities through upliftment, education and skill development",
+  "founder": "Mr Ashok Kumar Barar",
+  "founder_description": "He is the founder and chairman of BARAR TRUST, dedicated to establishing a trust for public charitable purposes.",
+  "values": [
+    "Education",
+    "Equality",
+    "Empowerment",
+    "Social Justice",
+    "Community Development",
+    "Health",
+    "Skill Development",
+    "Sustainable Livelihoods",
+    "Integrity",
+    "Transparency"
+  ],
+  "contact": {
+    "phone": null,
+    "email": null,
+    "address": "J3/122, GALI, NO. 7, NEAR GOVT. BARAT GHAR NEW DELHI-110062, India"
+  },
+  "project_one_title": "Education",
+  "project_one_description": "Provide sound education to children of all communities, preparing them to become responsible citizens through all-round development based on values.",
+  "project_two_title": "Computer & Vocational Training",
+  "project_two_description": "Run computer education, vocational training and income generating programs for masses, especially for SC, ST, BC, OBC, Minorities, women, aged and disabled.",
+  "project_three_title": "Technical Schools & Hospitals",
+  "project_three_description": "Establish technical schools, hospitals, press and publication division for the benefit of students and common people.",
+  "project_four_title": "Awareness Generation",
+  "project_four_description": "Create awareness for the upliftment, unity, equality and brotherhood of the community.",
+  "project_five_title": "Social Problem Intervention",
+  "project_five_description": "Undertake intervention programs networking with government officials to reduce social problems.",
+  "project_six_title": "Khadi & Village Industries",
+  "project_six_description": "Start Khadi & Village Industries Commission’s scheme through weaker section people, providing agriculture, Horticulture, Floriculture, Animal Husbandry, Dairy & Panchayat Raj uplift.",
+  "ngo_experience": "The trust aims to provide comprehensive support through various programs, including education, healthcare, skill development, and social welfare initiatives."
+}
