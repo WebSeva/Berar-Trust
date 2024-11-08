@@ -92,7 +92,7 @@ export default function Footer (){
                         <Link href={''} target='on_blank'>
                              <img src='/linkedin.png' className={styles.social_image} width={30} height={30}/>  
                         </Link>
-                        <Link href={'https://www.facebook.com/bargadngo.org/'} target='on_blank'>
+                        <Link href={'/'} target='on_blank'>
                             <img src='/facebook.png' className={styles.social_image} width={30} height={30}/>
                         </Link>
                             
