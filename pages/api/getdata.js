@@ -1,4 +1,4 @@
-const fs = require('fs');let jsonFilePath = "./ngo.json";
+const fs = require('fs');let jsonFilePath = "../../ngo.json";
 
 export default function handler(req, res) {
     console.log('trying to read the joson')
