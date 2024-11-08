@@ -22,8 +22,8 @@ export default function Gallery () {
                     <img src='/photo5.jpeg' className={styles.galleryImage} width={150} height={200}/>
                     <img src='/photo7.jpeg' className={styles.galleryImage} width={150} height={200}/>
                     <img src='/upliftment.jpeg' className={styles.galleryImage} width={150} height={200}/>
-                    <img src='/CapacityBuildup.png' className={styles.galleryImage} width={150} height={200}/>
-                    <img src='/AccountingTraining.png' className={styles.galleryImage} width={150} height={200}/>
+                    <img src='/image.jpg' className={styles.galleryImage} width={150} height={200}/>
+                    <img src='/image2.jpg' className={styles.galleryImage} width={150} height={200}/>
 
                 </div>
               

@@ -83,7 +83,7 @@ export default function Projects (){
                                     <div className={styles.newsDiv_block_second}>
                                                 <div className={styles.newsDiv_block_second_left}>
                                                             <div className={styles.newsDiv_block_second_left_photo}>
-                                                                    <img src="/AccountingTraining.png" className={styles.newsDiv_block_second_left_photo_image} width={150} height={150}/>
+                                                                    <img src="/image2.jpg" className={styles.newsDiv_block_second_left_photo_image} width={150} height={150}/>
                                                             </div>
                                                 </div>
 
@@ -120,7 +120,7 @@ export default function Projects (){
                                     <div className={styles.newsDiv_block_second}>
                                                 <div className={styles.newsDiv_block_second_left}>
                                                             <div className={styles.newsDiv_block_second_left_photo}>
-                                                                    <img src="/VanPanchayat.png" className={styles.newsDiv_block_second_left_photo_image} width={150} height={150}/>
+                                                                    <img src="/image.jpg" className={styles.newsDiv_block_second_left_photo_image} width={150} height={150}/>
                                                             </div>
                                                 </div>
 
@@ -150,7 +150,7 @@ export default function Projects (){
                                             </div>
                                             <div className={styles.newsDiv_block_right}>
                                                         <div className={styles.newsDiv_block_right_photo}>
-                                                                <img src="/CapacityBuildup.png" className={styles.newsDiv_block_right_photo_image} width={150} height={150}/>
+                                                                <img src="/khadi.webp" className={styles.newsDiv_block_right_photo_image} width={150} height={150}/>
                                                         </div>
                                             </div>
                                     </div>
