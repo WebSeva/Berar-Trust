@@ -1,5 +1,5 @@
 const fs = require('fs');
-let jsonFilePath = 'public/ngo.json'; // Correct path for your file
+let jsonFilePath = '/ngo.json'; // Correct path for your file
 
 export default function handler(req, res) {
     console.log('Attempting to read the JSON file...');
